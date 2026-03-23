@@ -1,4 +1,4 @@
-# WebGIS Crime Analysis - Taipei City
+# Taipei Crime Mapper: Interactive WebGIS Platform
 
 An interactive WebGIS application for analyzing and visualizing crime data in Taipei City. This project was developed as the final report for the **"Web Geographic Information System"** course (113-1).
 
