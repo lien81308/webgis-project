@@ -19,6 +19,13 @@ An interactive WebGIS application for analyzing and visualizing crime data in Ta
 - **Data Format**: GeoJSON
 - **Hosting**: GitHub Pages
 
+## Data Source
+The crime data used in this project is sourced from the **[Taipei City Open Data Platform (臺北市資料大平台)](https://data.taipei/)**, specifically:
+- **Residential Burglary** (住宅竊盜點位資訊)
+- **Car Theft** (汽車竊盜點位資訊)
+- **Motorcycle Theft** (機車竊盜點位資訊)
+- **Bicycle Theft** (自行車竊盜點位資訊)
+
 ## Credits & Team
 This project was a collaborative effort by **Group 2**:
 - **邱辰安**: Project Lead, Lead Developer (Heatmap & Geocoding).
