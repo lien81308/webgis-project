@@ -1,5 +1,5 @@
 // Mapbox 設定
-mapboxgl.accessToken = 'pk.eyJ1IjoiYW5keWNoaXU2MDkiLCJhIjoiY20xaWxjemc1MGVoZzJqb2NyZ2M2enE1aSJ9.PBoFruvUCgE-xt0MbTYmkg';
+mapboxgl.accessToken = 'pk.eyJ1IjoibGllbjgxMzA4IiwiYSI6ImNtbjJ2dThuYTFhMHcycG9pbmN2NHo0Y2YifQ.-UkIQeRJc63oKUhF5IeAbg';
 
 // 主題設定
 const mapThemes = {
