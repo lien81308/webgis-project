@@ -7,7 +7,7 @@ const mapThemes = {
     light: 'mapbox://styles/mapbox/light-v10'
 };
 
-let currentTheme = 'dark'; // 預設使用深色主題
+let currentTheme = 'light'; // 預設使用深色主題
 
 // 行政區中心點
 const districtCenters = {
