@@ -72,13 +72,13 @@ function updateLegend() {
 
 function toggleMapTheme() {
     const themeButton = document.getElementById('theme-toggle');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     
     // 更新地圖樣式
     map.setStyle(mapThemes[newTheme]);
     
     // 更新按鈕文字和樣式
-    themeButton.textContent = newTheme === 'dark' ? '切換淺色主題' : '切換深色主題';
+    themeButton.textContent = newTheme === 'light' ? '切換深色主題' : '切換淺色主題';
     themeButton.className = `theme-button ${newTheme}`;
     
     // 更新當前主題
