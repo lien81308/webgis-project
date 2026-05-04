@@ -12,13 +12,6 @@ An interactive WebGIS application for analyzing and visualizing crime data in Ta
 - **Statistical Dashboard**: Integrated charts for temporal analysis (built with Chart.js).
 - **Responsive UI**: Interactive sidebars and map controls.
 
-## Tech Stack
-- **WebGIS Engine**: Mapbox GL JS
-- **Spatial Analysis**: Turf.js
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Data Format**: GeoJSON
-- **Hosting**: GitHub Pages
-
 ## Data Source
 The crime data used in this project is sourced from the **[Taipei City Open Data Platform (臺北市資料大平台)](https://data.taipei/)**, specifically:
 - **Residential Burglary** (住宅竊盜點位資訊)
