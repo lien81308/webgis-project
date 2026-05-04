@@ -85,7 +85,7 @@ function toggleMapTheme() {
     currentTheme = newTheme;
 
     // 切換主題類別
-    document.body.classList.toggle('theme-light', currentTheme === 'light');
+    document.body.classList.toggle('theme-light', currentTheme === 'dark');
     
     // 在樣式加載完成後重新添加資料源和圖層
     map.once('style.load', () => {
