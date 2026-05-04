@@ -1,5 +1,5 @@
 // Mapbox 設定
-mapboxgl.accessToken = 'pk.eyJ1IjoibGllbjgxMzA4IiwiYSI6ImNtbjJ2dThuYTFhMHcycG9pbmN2NHo0Y2YifQ.-UkIQeRJc63oKUhF5IeAbg';
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5keWNoaXU2MDkiLCJhIjoiY20xaWxjemc1MGVoZzJqb2NyZ2M2enE1aSJ9.PBoFruvUCgE-xt0MbTYmkg';
 
 // 主題設定
 const mapThemes = {
@@ -7,7 +7,7 @@ const mapThemes = {
     light: 'mapbox://styles/mapbox/light-v10'
 };
 
-let currentTheme = 'light'; // 預設使用深色主題
+let currentTheme = 'dark'; // 預設使用深色主題
 
 // 行政區中心點
 const districtCenters = {
@@ -72,13 +72,13 @@ function updateLegend() {
 
 function toggleMapTheme() {
     const themeButton = document.getElementById('theme-toggle');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     
     // 更新地圖樣式
     map.setStyle(mapThemes[newTheme]);
     
     // 更新按鈕文字和樣式
-    themeButton.textContent = newTheme === 'light' ? '切換深色主題' : '切換淺色主題';
+    themeButton.textContent = newTheme === 'dark' ? '切換淺色主題' : '切換深色主題';
     themeButton.className = `theme-button ${newTheme}`;
     
     // 更新當前主題

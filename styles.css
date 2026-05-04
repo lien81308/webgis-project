@@ -1,6 +1,4 @@
-/* ============================================================
-   1. 基礎樣式 (預設藍紫色調)
-   ============================================================ */
+/* 基礎樣式 */
 body { 
     margin: 0; 
     padding: 0; 
@@ -8,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #F5F3FF; /* 背景：藍紫色 */
+    background-color: #F5F3FF;
 }
 
 /* 頁首樣式 */
@@ -25,7 +23,6 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
-    color: white !important; /* 確保標題是白色 */
 }
 
 /* 內容容器樣式 */
@@ -35,11 +32,10 @@ body {
     overflow: hidden;
 }
 
-/* 側邊欄基礎樣式 */
+/* 側邊欄樣式 */
 .sidebar {
-    width: 320px;
-    padding: 20px 10px;
-    padding-bottom: 60px;
+    width: 300px;
+    padding: 20px;
     background: #ffffff;
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(46, 16, 101, 0.1);
@@ -50,14 +46,13 @@ body {
     flex-direction: column;
 }
 
-/* 控制組樣式 (面板框) */
+/* 控制組樣式 */
 .control-group {
     margin-bottom: 20px;
-    background: #EEF2FF; /* 淡藍色 */
-    padding: 15px 10px;
+    background: #EEF2FF;
+    padding: 15px;
     border-radius: 8px;
     border: 1px solid #C7D2FE;
-    height: auto;
 }
 
 /* 表單元素樣式 */
@@ -88,7 +83,7 @@ select:focus {
     box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
 }
 
-/* 年份與案件數量顯示 */
+/* 年份顯示樣式 */
 .year-display {
     font-size: 1.2em;
     font-weight: 600;
@@ -101,6 +96,7 @@ select:focus {
     border: 1px solid #C7D2FE;
 }
 
+/* 犯罪數量顯示樣式 */
 #crime-count {
     margin: 10px 0;
     padding: 15px;
@@ -113,7 +109,7 @@ select:focus {
     font-size: 16px;
 }
 
-/* 按鈕容器與導覽按鈕 */
+/* 主頁面底部按鈕容器 */
 .bottom-button-container {
     margin-bottom: 20px;
     background: #EEF2FF;
@@ -124,24 +120,89 @@ select:focus {
     gap: 8px;
 }
 
+/* 主頁面的按鈕樣式 */
 .nav-button-statistics,
-.nav-button-interact,
-#nav-button {
+.nav-button-interact {
     flex: 1;
-    padding: 8px 12px;
+    padding: 8px 12px; /* 減少內邊距 */
     background: linear-gradient(to right, #2E1065, #4F46E5);
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 13px; /* 稍微縮小字體 */
     font-weight: 500;
     transition: all 0.3s ease;
     text-align: center;
 }
 
-/* ///////// 寰域分析相關樣式 ///////// */
+/* 互動頁面返回按鈕容器 */
+#nav-button {
+    width: 100%;
+    padding: 10px 12px; /* 減少內邊距 */
+    background: linear-gradient(to right, #2E1065, #4F46E5);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px; /* 稍微縮小字體 */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+}
 
+
+
+/* 側邊欄樣式更新 */
+.sidebar {
+    width: 320px;
+    padding: 20px 10px;
+    padding-bottom: 60px; /* 減少底部間距 */
+    background: #ffffff;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(46, 16, 101, 0.1);
+    position: relative;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+}
+
+/* 分析結果區域樣式 - 調整底部間距 */
+#analysis-result {
+    margin-top: 20px;
+    margin-bottom: 60px; /* 減少底部間距 */
+}
+
+/* 地圖容器樣式 */
+.map-container {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* 分析表單樣式 */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #C7D2FE;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2E1065;
+    box-sizing: border-box;
+}
+
+
+
+/* 分析結果區域樣式 */
 #analysis-result {
     margin-top: 20px;
     margin-bottom: 80px;
@@ -157,53 +218,24 @@ select:focus {
     color: #2E1065;
     height: auto;
     overflow: visible;
+}
+
+/* 控制組樣式 */
+.control-group {
+    margin-bottom: 20px;
+    background: #EEF2FF;
+    padding: 15px 10px;
+    border-radius: 8px;
     border: 1px solid #C7D2FE;
+    height: auto;
 }
 
-.input-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
 
-.form-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #C7D2FE;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #2E1065;
-    box-sizing: border-box;
-}
 
-#analyze-button {
-    width: 100%;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #2E1065, #4F46E5);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    text-align: center;
-    display: block;
-    box-shadow: 0 2px 4px rgba(46, 16, 101, 0.2);
-}
 
-/* ///////// 地圖 UI 相關樣式 ///////// */
 
-.map-container {
-    position: relative;
-    flex: 1;
-    height: 100%;
-}
 
-#map { width: 100%; height: 100%; }
-
+/* 主題切換按鈕樣式 */
 #theme-toggle-container {
     position: absolute;
     top: 10px;
@@ -222,6 +254,41 @@ select:focus {
     color: white;
 }
 
+.theme-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.theme-button.dark {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.theme-button.dark:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.theme-button.light {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.theme-button.light:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 彈出視窗樣式 */
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.mapboxgl-popup-content {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #C7D2FE;
+    box-shadow: 0 2px 4px rgba(46, 16, 101, 0.1);
+}
+
 /* 圖例樣式 */
 .map-legend {
     position: absolute;
@@ -235,55 +302,192 @@ select:focus {
     max-width: 250px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
-#legend { margin-top: 20px; padding: 15px; border-radius: 8px; }
-#legend h3 { margin: 0 0 12px 0; color: #2E1065; font-size: 16px; font-weight: 600; }
-.legend-item { display: flex; align-items: center; margin-bottom: 8px; padding: 4px 0; }
-.legend-color { width: 16px; height: 16px; border-radius: 50%; margin-right: 12px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
-.legend-label { color: #4B5563; font-size: 14px; }
+#legend {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
 
-/* Mapbox 彈出視窗與控制項 */
-.mapboxgl-popup-content { padding: 15px; border-radius: 8px; border: 1px solid #C7D2FE; box-shadow: 0 2px 4px rgba(46, 16, 101, 0.1); }
-.mapboxgl-ctrl-top-right { top: 45px; right: 10px; }
+#legend h3 {
+    margin: 0 0 12px 0;
+    color: #2E1065;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 4px 0;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.legend-label {
+    color: #4B5563;
+    font-size: 14px;
+}
+
+/* 深色主題樣式 */
+.theme-dark .map-legend {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .legend-label {
+    color: white;
+}
+
+.theme-dark #legend h3 {
+    color: white;
+}
 
 
-/* ============================================================
-   2. 深色主題樣式 (點擊後覆蓋)
-   ============================================================ */
+/* /////////環域分析////////// */
+
+/* 表單輸入框樣式 */
+.input-group {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex; /* 使用 Flexbox 對齊 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: stretch; /* 讓輸入框撐滿容器 */
+}
+
+.form-input {
+    width: 100%; /* 撐滿父容器 */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #C7D2FE;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2E1065;
+    box-sizing: border-box; /* 確保寬度包含邊框 */
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+
+/* 開始分析按鈕樣式 */
+#analyze-button {
+    width: calc(100% - 0px); 
+    margin: 0px 0px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #2E1065, #4F46E5);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: block;
+    box-shadow: 0 2px 4px rgba(46, 16, 101, 0.2);
+}
+
+#analyze-button:hover {
+    background: linear-gradient(to right, #4F46E5, #6366F1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(46, 16, 101, 0.25);
+}
+
+#analyze-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(46, 16, 101, 0.2);
+}
+
+/* 確保分析表單內的其他樣式不受影響 */
+#analysis-form {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* Mapbox 導航控制樣式 */
+.mapboxgl-ctrl-top-right {
+    top: 45px;
+    right: 10px;
+}
+
+
+/* 深色主題 - 側邊欄 */
 .theme-dark .sidebar {
     background: #1E1E2E;
     color: #EDEDED;
     border: 1px solid #333;
 }
 
-.theme-dark .control-group,
+.theme-dark .control-group {
+    background: #2C2C3C;
+    border: 1px solid #EDEDED;
+}
+
 .theme-dark .year-display, 
-.theme-dark #crime-count,
-.theme-dark #result-content {
+.theme-dark #crime-count {
     background: #2C2C3C;
     border: 1px solid #EDEDED;
     color: #EDEDED;
 }
 
-.theme-dark select, 
-.theme-dark #district-select,
-.theme-dark #crime-type-select,
-.theme-dark .form-input {
+.theme-dark select {
+    background: #2C2C3C;
+    color: #EDEDED;
+    border: 1px solid #EDEDED;
+}
+
+.theme-dark .bottom-button-container {
+    background: #1E1E2E;
+    color: #EDEDED;
+}
+
+.theme-dark #district-select{
     background-color: #2C2C3C;
     border: 1px solid #EDEDED;
     color: #EDEDED;
 }
 
-.theme-dark .bottom-button-container {
-    background: #1E1E2E;
+.theme-dark #crime-type-select{
+    background-color: #2C2C3C;
+    border: 1px solid #EDEDED;
+    color: #EDEDED;
 }
 
-.theme-dark .map-legend {
-    background: rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.theme-dark .input-group{
+    background-color: #2C2C3C;
+    border: 1px solid #EDEDED;
+    color: #EDEDED;
 }
 
-.theme-dark .legend-label, .theme-dark #legend h3 {
-    color: white;
+.theme-dark .form-input{
+    background-color: #2C2C3C;
+    border: 1px solid #EDEDED;
+    color: #EDEDED;
+}
+
+.theme-dark #result-content{
+    background-color: #2C2C3C;
+    border: 1px solid #EDEDED;
+    color: #EDEDED;
 }
